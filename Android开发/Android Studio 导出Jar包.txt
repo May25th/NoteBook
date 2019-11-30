@@ -1,0 +1,14 @@
+Gradle 需要去官网下载一个可以用的压缩包 然后配置环境变量  https://gradle.org/
+https://gradle.org/next-steps/?version=6.0.1&format=all
+Android Studio 打出JAR包的流程
+https://blog.csdn.net/github_27263697/article/details/79868363
+>gradlew --stacktrace 如果报错的话 在gradle.properties 这个配置里 找到这个org.gradle.jvmargs=-Xmx512m  默认内存设置的太大了
+>gradlew makeJar 导出Jar包的命令
+build.gradle 需要做修改
+apply plugin: 'com.android.application' 改成 apply plugin: 'com.android.library'
+applicationId "com.bellcat.androidcore" 这个需要注释掉 如果建立模块没毛病的话 这一行就没有
+build/intermediates/packaged-classes/release/ 这是新版本的 Grable build命令 生成jar文件的位置 网上的太老了
+androidx 是新标准的内置的包 不要用 support v4  v7这种已经过期不能用的包
+Android Studio 创建工程后 要新建一个 Android Library 模块 作为导出模块  
+
+

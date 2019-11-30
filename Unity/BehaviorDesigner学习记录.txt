@@ -1,0 +1,12 @@
+﻿1 设计顺序优先级 左边的优先级高
+2 执行顺序是从左到右的顺序执行，并且是深度优先
+3 Behaviour面板里的 Restart When Complete 记得勾选 这样才可以
+4 Wait 延迟执行的
+5 Repeater 重复执行的
+6 Conditional 条件节点  自定义扩展
+7 Parallel 并行节点 同一时间下面的节点同时执行 更像是个并联电路
+8 Selector 选择节点 所有子节点都返回false才返回false  有一个子节点返回success 直接返回Success
+9 Parallel Selector（并行选择）节点
+10 Priority Selector（优先选择）节点
+11 Random Selector（随机选择）节点
+ 
